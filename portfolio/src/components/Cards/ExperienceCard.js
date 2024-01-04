@@ -1,18 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Document = styled.img`
-  display: none;
-  height: 70px;
-  width: fit-content;
-  background-color: #000;
-  border-radius: 10px;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`;
-
 const Description = styled.div`
   width: 100%;
   font-size: 15px;
@@ -53,10 +41,6 @@ const Card = styled.div`
     padding: 10px;
     gap: 8px;
     width: 300px;
-  }
-
-  &:hover ${Document} {
-    display: flex;
   }
 
   &:hover ${Span} {
@@ -166,11 +150,6 @@ const ExperienceCard = ({ experience }) => {
           </>
         )}
       </Description>
-      {experience.doc && (
-        <a href={experience.doc} target="new">
-          <Document src={experience.doc} />
-        </a>
-      )}
     </Card>
   );
 };
