@@ -38,6 +38,7 @@ function App() {
           <Hero />
           <Wrapper>
             <Experience />
+            <Education />
           </Wrapper>
         </Body>
       </Router>

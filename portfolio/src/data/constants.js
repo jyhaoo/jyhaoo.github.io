@@ -25,3 +25,21 @@ export const experiences = [
     doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
 ];
+
+export const education = [
+  {
+    id: 0,
+    img: "BerkeleyLogo",
+    school: "UC Berkeley Extensions ",
+    date: "Dec 2021 - Jun 2022",
+    grade: "A-",
+    degree: "Bootcamp Cybersecurity certificate",
+  },
+  {
+    id: 1,
+    img: "UsfcaLogo",
+    date: "Aug 2017 - May 2021",
+    grade: "3.45 GPA",
+    degree: "Bachelor of Science in Computer Science",
+  },
+];
