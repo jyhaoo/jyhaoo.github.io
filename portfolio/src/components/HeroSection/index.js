@@ -207,7 +207,6 @@ const Img = styled.img`
 `;
 
 const Hero = () => {
-  // Hero Image in Hero right container
   return (
     <div id="about">
       <HeroContainer>
