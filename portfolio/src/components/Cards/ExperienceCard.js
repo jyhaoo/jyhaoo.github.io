@@ -1,24 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import AccesSOSLogo from "../../images/AccesSOSLogo.png";
+import KeysightLogo from "../../images/KeysightLogo.jpeg";
 
 const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
-`;
-
-const Span = styled.span`
-  overflow: hidden;
-  display: -webkit-box;
-  max-width: 100%;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
 `;
 
 const Card = styled.div`
@@ -43,13 +36,17 @@ const Card = styled.div`
     width: 300px;
   }
 
-  &:hover ${Span} {
-    overflow: visible;
-    -webkit-line-clamp: unset;
-  }
-
-  border: 0.1px solid #306ee8;
+  border: 0.1px solid #45a29e;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+`;
+
+const Span = styled.div`
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 `;
 
 const Top = styled.div`
@@ -77,7 +74,7 @@ const Body = styled.div`
 const Role = styled.div`
   font-size: 18px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_primary};
   @media only screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -123,11 +120,22 @@ const Skill = styled.div`
   }
 `;
 
+const ExperienceImage = (experienceImage) => {
+  switch (experienceImage) {
+    case "Keysight":
+      return KeysightLogo;
+    case "AccesSOS":
+      return AccesSOSLogo;
+    default:
+      return AccesSOSLogo;
+  }
+};
+
 const ExperienceCard = ({ experience }) => {
   return (
     <Card>
       <Top>
-        <Image src={experience.img} />
+        <Image src={ExperienceImage(experience.img)} />
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>

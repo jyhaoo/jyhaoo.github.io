@@ -71,7 +71,7 @@ const NavItems = styled.ul`
 `;
 
 const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_tertiary};
   font-weight: 500;
   cursor: pointer;
   text-docoration: none;
@@ -82,37 +82,36 @@ const NavLink = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: end;
   width: 80%;
   height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   padding: 0 6px;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
-const GithubButton = styled.button`
-  background-color: transparent;
-  color: ${({ theme }) => theme.primary};
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
-  display: flex;
+const GitHubButton = styled.a`
+  border: 1.8px solid ${({ theme }) => theme.text_tertiary};
   justify-content: center;
+  display: flex;
   align-items: center;
-  padding: 0px 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
   height: 70%;
+  border-radius: 20px;
+  color: ${({ theme }) => theme.text_tertiary};
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.6s ease-in-out;
   :hover {
-    background-color: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.text_tertiary};
     color: ${({ theme }) => theme.white};
   }
-
-  @media screen and (max-width: 640px) {
-    font-size: 0.8rem;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
   }
 `;
 
@@ -188,20 +187,11 @@ const Navbar = () => {
             About
           </NavLink>
           <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton
-            style={{
-              padding: "10px 16px",
-              background: `${theme.primary}`,
-              color: "white",
-              width: "max-content",
-            }}
-          >
-            Github Profile
-          </GithubButton>
+          <GitHubButton target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
         {open && (
           <MobileMenu open={open}>
@@ -222,14 +212,6 @@ const Navbar = () => {
               Experience
             </MobileMenuLinks>
             <MobileMenuLinks
-              href="#projects"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              Projects
-            </MobileMenuLinks>
-            <MobileMenuLinks
               href="#Education"
               onClick={() => {
                 setOpen(!open);
@@ -237,8 +219,16 @@ const Navbar = () => {
             >
               Education
             </MobileMenuLinks>
+            <MobileMenuLinks
+              href="#projects"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              Projects
+            </MobileMenuLinks>
             <ButtonContainer>
-              <GithubButton
+              <GitHubButton
                 style={{
                   padding: "10px 16px",
                   background: `${theme.primary}`,
@@ -247,7 +237,7 @@ const Navbar = () => {
                 }}
               >
                 Github Profile
-              </GithubButton>
+              </GitHubButton>
             </ButtonContainer>
           </MobileMenu>
         )}
