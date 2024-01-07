@@ -36,7 +36,7 @@ const Card = styled.div`
     width: 300px;
   }
 
-  border: 0.1px solid #45a29e;
+  border: 0.1px solid ${({ theme }) => theme.secondary};
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `;
 
