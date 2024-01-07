@@ -13,8 +13,7 @@ const Body = styled.div`
   height: 100%
   overflow-x: hidden;
 `;
-// #45A29E
-// #1F2833
+
 const Wrapper = styled.div`
 background: linear-gradient(
   38.73deg,

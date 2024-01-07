@@ -40,5 +40,7 @@ export const education = [
     date: "Dec 2021 - Jun 2022",
     grade: "A-",
     degree: "Bootcamp Cybersecurity certificate",
+    document:
+      "I wanted to gain a better insight as to what goes into protecting the internet. This was all fueled from a class I took back in USF, cryptography",
   },
 ];
