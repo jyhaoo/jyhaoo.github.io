@@ -29,17 +29,18 @@ export const experiences = [
 export const education = [
   {
     id: 0,
+    img: "UsfcaLogo",
+    school: "University of San Francisco",
+    date: "Aug 2017 - May 2021",
+    grade: "3.45 GPA",
+    degree: "Bachelor of Science in Computer Science",
+  },
+  {
+    id: 1,
     img: "BerkeleyLogo",
     school: "UC Berkeley Extensions ",
     date: "Dec 2021 - Jun 2022",
     grade: "A-",
     degree: "Bootcamp Cybersecurity certificate",
-  },
-  {
-    id: 1,
-    img: "UsfcaLogo",
-    date: "Aug 2017 - May 2021",
-    grade: "3.45 GPA",
-    degree: "Bachelor of Science in Computer Science",
   },
 ];
