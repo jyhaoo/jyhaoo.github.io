@@ -4,7 +4,7 @@ export const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text};
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
@@ -71,7 +71,7 @@ export const Body = styled.div`
 export const Role = styled.div`
   font-size: 18px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text};
   @media only screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -80,7 +80,7 @@ export const Role = styled.div`
 export const Company = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.text + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -89,7 +89,7 @@ export const Company = styled.div`
 export const Date = styled.div`
   font-size: 12px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  color: ${({ theme }) => theme.text + 90};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
@@ -111,7 +111,7 @@ export const ItemWrapper = styled.div`
 export const Skill = styled.div`
   font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
