@@ -49,7 +49,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.text};
   }
 `;
 
@@ -67,7 +67,7 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_tertiary};
+  color: ${({ theme }) => theme.secondary};
   font-weight: 500;
   cursor: pointer;
   text-docoration: none;
@@ -90,13 +90,13 @@ export const ButtonContainer = styled.div`
 `;
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.text_tertiary};
+  border: 1.8px solid ${({ theme }) => theme.secondary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.text_tertiary};
+  color: ${({ theme }) => theme.secondary};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
@@ -104,7 +104,7 @@ export const GitHubButton = styled.a`
   font-size: 16px;
   transition: all 0.6s ease-in-out;
   :hover {
-    background: ${({ theme }) => theme.text_tertiary};
+    background: ${({ theme }) => theme.secondary};
     color: ${({ theme }) => theme.white};
   }
   @media screen and (max-width: 768px) {
@@ -116,34 +116,4 @@ export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
   font-size: 18px;
-`;
-
-export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    position: absolute;
-    top: 80;
-    right: 0;
-    width: 100%;
-    padding 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light + 99};
-    transition: all 0.3s ease-in-out;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    border-radius: 0 0 20 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0.3);
-    opacity: ${({ open }) => (open ? "1" : "0")};
-    z-index: ${({ open }) => (open ? "1" : "-1")};
-`;
-
-export const MobileLink = styled(LinkR)`
-  color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
 `;

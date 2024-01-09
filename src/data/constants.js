@@ -1,6 +1,5 @@
 export const Bio = {
   name: "Jason Hao",
-  roles: ["React Developer", "R&D Engineer"],
   description:
     "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to make meaningful contributions and achieve greaat things.",
   github:
