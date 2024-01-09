@@ -5,7 +5,19 @@ import TypeWriter from "typewriter-effect";
 import HeroImg from "../../images/HeroImage.jpg";
 
 const HeroContainer = styled.div`
-  background-color: ${({ theme }) => theme.card_light};
+  background-color: ${({ theme }) => theme.bg};
+  background: linear-gradient(
+  38.73deg,
+  rgba(69, 162, 158, 0.15) 0%, 
+  rgba(31, 40, 51, 0) 50%
+  ),
+  linear-gradient(
+    141.27deg,
+    rgba(69, 162, 158, 0) 50%,
+    rgba(31, 40, 51, 0.15) 100%
+  );
+  width: 100%
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   display: flex;
   justify-content: center;
   position: relative;
@@ -153,37 +165,24 @@ const SubTitle = styled.div`
 `;
 
 const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  border: 1.8px solid ${({ theme }) => theme.text_tertiary};
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  color: ${({ theme }) => theme.text_tertiary};
+  cursor: pointer;
+  padding: 0 30px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.6s ease-in-out;
+  :hover {
+    background: ${({ theme }) => theme.text_tertiary};
+    color: ${({ theme }) => theme.white};
+  }
+  @media screen and (max-width: 786px) {
+    font-size: 14px;
+  }
 `;
 
 const Img = styled.img`
@@ -193,7 +192,7 @@ const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.text_tertiary};
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -217,18 +216,8 @@ const Hero = () => {
               Hi, I am <br />
               {Bio.name}
             </Title>
-            <TextLoop>
-              I am a{" "}
-              <Span>
-                <TypeWriter
-                  options={{ strings: Bio.roles, autoStart: true, loop: true }}
-                ></TypeWriter>
-              </Span>
-            </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="_blank">
-              Check Resume
-            </ResumeButton>
+            <ResumeButton>Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
             <Img src={HeroImg} alt="Hero Image" />
