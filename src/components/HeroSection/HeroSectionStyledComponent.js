@@ -89,7 +89,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.text_primary};
+  border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -105,7 +105,7 @@ export const Img = styled.img`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.primary};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -122,7 +122,7 @@ export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text};
 
   @media (max-width: 960px) {
     text-align: center;
@@ -143,9 +143,9 @@ export const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-  border: 1.8px solid ${({ theme }) => theme.text_tertiary};
+  border: 1.8px solid ${({ theme }) => theme.secondary};
   background: ${({ theme }) => theme.bg};
-  color: ${({ theme }) => theme.text_tertiary};
+  color: ${({ theme }) => theme.secondary};
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
