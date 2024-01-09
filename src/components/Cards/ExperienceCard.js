@@ -14,7 +14,7 @@ import {
   Skills,
   ItemWrapper,
   Skill,
-} from "../StyledComponents/ExperienceCardStyledComponent";
+} from "./ExperienceCardStyledComponent";
 
 const ExperienceImage = (experienceImage) => {
   switch (experienceImage) {

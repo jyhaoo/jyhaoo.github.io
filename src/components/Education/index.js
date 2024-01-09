@@ -13,7 +13,7 @@ import {
   Title,
   Desc,
   TimelineSection,
-} from "../StyledComponents/EducationStyledComponent";
+} from "./EducationStyledComponent";
 
 const Education = () => {
   return (

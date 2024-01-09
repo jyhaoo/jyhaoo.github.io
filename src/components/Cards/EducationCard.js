@@ -10,7 +10,7 @@ import {
   Degree,
   Date,
   Grade,
-} from "../StyledComponents/EducationCardStyledComponent";
+} from "./EducationCardStyledComponent";
 
 const EducationImage = (educationImage) => {
   switch (educationImage) {

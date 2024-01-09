@@ -13,7 +13,7 @@ import {
   Title,
   Desc,
   TimelineSection,
-} from "../StyledComponents/ExperienceStyledComponent";
+} from "./ExperienceStyledComponent";
 
 const Experience = () => {
   return (
