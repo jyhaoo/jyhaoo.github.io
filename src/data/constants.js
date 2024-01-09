@@ -1,7 +1,7 @@
 export const Bio = {
   name: "Jason Hao",
   description:
-    "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to make meaningful contributions and achieve greaat things.",
+    "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to make meaningful contributions and achieve great things.",
   github:
     "https://github.com/jyhaoo?tab=overview&from=2024-01-01&to=2024-01-09",
   resume:
