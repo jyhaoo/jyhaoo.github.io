@@ -19,7 +19,7 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
-              Hi, I am <br /> {Bio.name}
+              Hello, I am <br /> {Bio.name}
             </Title>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="display">

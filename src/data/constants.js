@@ -2,8 +2,9 @@ export const Bio = {
   name: "Jason Hao",
   roles: ["React Developer", "R&D Engineer"],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/jyhaoo",
+    "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to make meaningful contributions and achieve greaat things.",
+  github:
+    "https://github.com/jyhaoo?tab=overview&from=2024-01-01&to=2024-01-09",
   resume:
     "https://docs.google.com/document/d/1_vxDZJvqmRS6-32OVI0tYEuzrE3BaeubIrpzpoUZXu0/edit?usp=sharing",
 };
