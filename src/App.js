@@ -2,7 +2,7 @@ import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
-import Hero from "./components/HeroSection";
+import HeroSection from "./components/HeroSection";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -35,7 +35,7 @@ function App() {
       <Router>
         <Navbar />
         <Body>
-          <Hero />
+          <HeroSection />
           <Wrapper>
             <Experience />
             <Education />
