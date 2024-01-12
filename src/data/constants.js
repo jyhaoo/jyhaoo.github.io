@@ -22,10 +22,25 @@ export const experiences = [
     id: 1,
     img: "AccesSOS",
     role: "React Developer",
-    company: "AccesSOS",
+    company: "accesSOS",
     date: "Jan 2021 - Feb 2022",
     desc: "Worked on the Text911 App and text911.info website",
     skills: ["ReactJS", "React Native", "NodeJs", "HTML", "CSS", "JavaScript"],
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: "accesSOS text911.info map",
+    date: "March 2021 - April 2021",
+    description:
+      "Built the Text911.info map which displays all the counties that have text to 911 capabilities. Implemented features on top of Mapbox API such as outlining all the counties ",
+    image: "text911infoMap",
+    tags: ["React JS", "Redux", "Mapbox API"],
+    category: "front-end web app",
+    github: "https://github.com/jyhaoo",
+    webapp: "https://text911.info/",
   },
 ];
 
