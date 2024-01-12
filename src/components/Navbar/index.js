@@ -1,12 +1,10 @@
 import React from "react";
 import { DiCssdeck } from "react-icons/di";
-import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobileIcon,
   NavItems,
   NavLink,
   ButtonContainer,
@@ -15,7 +13,6 @@ import {
 } from "./NavbarStyledComponent";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Nav>
       <NavbarContainer>
@@ -33,16 +30,10 @@ const Navbar = () => {
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
-        <MobileIcon>
-          <FaBars
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          />
-        </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#experience">Experience</NavLink>
+          <NavLink href="#projects">Project</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
