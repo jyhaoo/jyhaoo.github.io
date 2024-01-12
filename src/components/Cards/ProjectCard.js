@@ -20,9 +20,9 @@ const ProjectImage = (image) => {
   }
 };
 
-const ProjectCards = ({ project }) => {
+const ProjectCards = ({ project, setOpenModal }) => {
   return (
-    <Card>
+    <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={ProjectImage(project.image)} />
       <Tags>
         {project.tags?.map((tag, index) => (

@@ -9,7 +9,7 @@ import {
   CardContainer,
 } from "./ProjectsStyledComponents";
 
-const Projects = () => {
+const Projects = ({ setOpenModal }) => {
   return (
     <Container id="projects">
       <Wrapper>
@@ -17,7 +17,11 @@ const Projects = () => {
         <Desc>Here is the collection of projects that I've worked on.</Desc>
         <CardContainer>
           {projects.map((project) => (
-            <ProjectCard project={project} key={project.id} />
+            <ProjectCard
+              project={project}
+              key={project.id}
+              setOpenModal={setOpenModal}
+            />
           ))}
         </CardContainer>
       </Wrapper>

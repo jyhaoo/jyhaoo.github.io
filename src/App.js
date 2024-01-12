@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
@@ -6,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
+import ProjectDetails from "./components/ProjectDetails";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`
@@ -31,6 +33,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 `;
 
 function App() {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkTheme}>
       <Router>
@@ -39,11 +42,14 @@ function App() {
           <HeroSection />
           <Wrapper>
             <Experience />
-            <Projects />
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
           </Wrapper>
           <Wrapper>
             <Education />
           </Wrapper>
+          {openModal.state && (
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          )}
         </Body>
       </Router>
     </ThemeProvider>
