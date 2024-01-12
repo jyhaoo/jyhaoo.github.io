@@ -39,7 +39,7 @@ export const Image = styled.img`
 export const Title = styled.div`
   font-size: 28px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.secondary};
   margin: 8px 6px 0px 6px;
   @media only screen and (max-width: 600px) {
     font-size: 24px;
@@ -51,7 +51,7 @@ export const Date = styled.div`
   font-size: 16px;
   margin: 2px 6px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
