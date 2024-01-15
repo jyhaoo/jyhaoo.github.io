@@ -1,7 +1,7 @@
 export const Bio = {
   name: "Jason Hao",
   description:
-    "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to make meaningful contributions and achieve great things.",
+    "I am a highly motivated and driven individual. I'm passionate about learning and always striving to grow. With a positive attitude and a growth mindset, I am ready to tackle challenges and contribute.",
   github:
     "https://github.com/jyhaoo?tab=overview&from=2024-01-01&to=2024-01-09",
   resume:
@@ -35,7 +35,7 @@ export const projects = [
     title: "accesSOS text911.info map",
     date: "March 2021 - April 2021",
     description:
-      "Built the Text911.info map which displays all the counties that have text to 911 capabilities. Implemented features on top of Mapbox API such as outlining all the counties ",
+      "Built the Text911.info map which displays all the counties that have text to 911 capabilities. Features implemented: Added polygons on the map to represent the counties, color coated them based on whether they supported text to 911 capabilities, added search bar to zoom in to selected county, added loading icon, added popup of county name based on where the mouse cursor is",
     image: "text911infoMap",
     tags: ["React JS", "Redux", "Mapbox API"],
     category: "front-end web app",
