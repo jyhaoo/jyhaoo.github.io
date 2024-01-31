@@ -16,7 +16,7 @@ export const experiences = [
     company: "Keysight Technologies",
     date: "Jan 2022 - Present",
     desc: "Developed flexible test instrument and DUT plugins for automated testing of 5G base stations, Designed and implemented test executive to run hardware and software diagnostics for 5G base station testing solution. Used pluggable architecture for scalable development and deployment of diagnostics tests, Demo and showcased instruments within Keysight’s 5G Testbed, Provided technical support and solutions to Aerospace and Defence customers",
-    skills: ["Python", "Knowledge of 5G"],
+    skills: ["Python", "Basics of 5G"],
   },
   {
     id: 1,
