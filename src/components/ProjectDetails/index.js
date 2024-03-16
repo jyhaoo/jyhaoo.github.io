@@ -2,6 +2,7 @@ import React from "react";
 import { Modal } from "@mui/material";
 import { CloseRounded } from "@mui/icons-material";
 import text911infoMap from "../../images/text911infoMap.png";
+import Budget from "../../images/Budget.png";
 import {
   Container,
   Wrapper,
@@ -19,6 +20,8 @@ const ProjectImage = (image) => {
   switch (image) {
     case "text911infoMap":
       return text911infoMap;
+    case "Budget":
+      return Budget;
     default:
       return text911infoMap;
   }

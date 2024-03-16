@@ -16,7 +16,7 @@ export const experiences = [
     company: "Keysight Technologies",
     date: "Jan 2022 - Present",
     desc: "Developed flexible test instrument and DUT plugins for automated testing of DUTs in regards to 5G, Designed and implemented test executive to run hardware and software diagnostics for 5G base station testing solution. Used pluggable architecture for scalable development and deployment of diagnostics tests, Demo and showcased instruments within Keysight’s 5G Testbed, Provided technical support and solutions to Aerospace and Defence customers",
-    skills: ["Python", "Basics of 5G"],
+    skills: ["Python", "5G Signaling", "C#"],
   },
   {
     id: 1,
@@ -42,6 +42,18 @@ export const projects = [
     github: "https://github.com/jyhaoo",
     webapp: "https://text911.info/",
   },
+  {
+    id: 1,
+    title: "Budget PWA",
+    date: "March 2024",
+    description:
+      "Build a budget tracking PWA that utilizes Nextjs and supabase. Features include adding new expense, adding tags to expense, displaying expenses in a chart based on the month and storing all of this in supabase.",
+    image: "Budget",
+    tags: ["NextJS", "Supabase"],
+    category: "front-end web app",
+    github: "https://github.com/jyhaoo/budget",
+    webapp: "https://github.com/jyhaoo/budget",
+  },
 ];
 
 export const education = [
@@ -50,7 +62,7 @@ export const education = [
     img: "UsfcaLogo",
     school: "University of San Francisco",
     date: "Aug 2017 - May 2021",
-    grade: "3.45 GPA",
+    grade: "3.80 GPA",
     degree: "Bachelor of Science in Computer Science",
   },
   {
@@ -58,7 +70,7 @@ export const education = [
     img: "BerkeleyLogo",
     school: "UC Berkeley Extensions ",
     date: "Dec 2021 - Jun 2022",
-    grade: "A-",
+    grade: "A",
     degree: "Bootcamp Cybersecurity certificate",
     document:
       "I wanted to gain a better insight as to what goes into protecting the internet. This was all fueled from a class I took back in USF, cryptography",
